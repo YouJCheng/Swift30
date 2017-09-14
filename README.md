@@ -30,6 +30,11 @@ Hacking with Swift project
 7. Whitehouse Petitions    
    SwiftJson 導入    
    同時使用 UITabViewController 與 NavigationController 
+    
+8. Game    
+    
+9. GCD    
+   performSelector / DispatchQueue
    
 
    
