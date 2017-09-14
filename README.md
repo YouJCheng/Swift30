@@ -1,7 +1,7 @@
 # Swift30
 Hacking with Swift project 
 
-1. Storm Viewer   
+1. Storm Viewer    
    利用 FileManager 找出圖片檔案並利用 tableView展示。
     
 2. Guess the Flag     
