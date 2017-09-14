@@ -22,51 +22,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrt-z4-AJA">
-                                <rect key="frame" x="87.5" y="109" width="200" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kj1-VU-DO7">
+                                <rect key="frame" x="60.5" y="183.5" width="254" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrt-z4-AJA">
+                                        <rect key="frame" x="0.0" y="0.0" width="254" height="100"/>
+                                        <state key="normal" title="Button" image="estonia"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQX-uY-dtj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kF-eH-2wJ">
+                                        <rect key="frame" x="0.0" y="100" width="254" height="100"/>
+                                        <state key="normal" title="Button" image="france"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zoD-VF-8cp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztx-lu-V33">
+                                        <rect key="frame" x="0.0" y="200" width="254" height="100"/>
+                                        <state key="normal" title="Button" image="italy"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z0h-cJ-9Hj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Hj6-TS-xXo"/>
-                                    <constraint firstAttribute="height" constant="100" id="kcJ-Pf-iBJ"/>
+                                    <constraint firstAttribute="width" secondItem="Kj1-VU-DO7" secondAttribute="height" multiplier="127:150" id="Tqc-31-GwE"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="estonia"/>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQX-uY-dtj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kF-eH-2wJ">
-                                <rect key="frame" x="87.5" y="254" width="200" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Yuh-vR-0Bp"/>
-                                    <constraint firstAttribute="height" constant="100" id="ZLa-I7-niB"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="france"/>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zoD-VF-8cp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztx-lu-V33">
-                                <rect key="frame" x="87.5" y="399" width="200" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="N1N-o6-hcI"/>
-                                    <constraint firstAttribute="height" constant="100" id="dtu-Jl-2ou"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="italy"/>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z0h-cJ-9Hj"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4kF-eH-2wJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="200:667" id="6Of-A9-trL"/>
-                            <constraint firstItem="Ztx-lu-V33" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="200:667" id="9H7-NM-TGM"/>
-                            <constraint firstItem="Jrt-z4-AJA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MSi-ui-aWd"/>
-                            <constraint firstItem="Ztx-lu-V33" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OEI-c2-b9l"/>
-                            <constraint firstItem="4kF-eH-2wJ" firstAttribute="top" secondItem="Jrt-z4-AJA" secondAttribute="bottom" constant="45" id="ZGq-sT-NPs"/>
-                            <constraint firstItem="Jrt-z4-AJA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="aVg-C1-cS5"/>
-                            <constraint firstItem="Jrt-z4-AJA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="200:667" id="bDz-70-p8a"/>
-                            <constraint firstItem="4kF-eH-2wJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bzk-0L-HL1"/>
-                            <constraint firstItem="Ztx-lu-V33" firstAttribute="top" secondItem="4kF-eH-2wJ" secondAttribute="bottom" constant="45" id="s20-WP-hiO"/>
+                            <constraint firstItem="Kj1-VU-DO7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J8Q-tH-V0B"/>
+                            <constraint firstItem="Kj1-VU-DO7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mw0-bz-9et"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cd3-uO-5fM"/>
