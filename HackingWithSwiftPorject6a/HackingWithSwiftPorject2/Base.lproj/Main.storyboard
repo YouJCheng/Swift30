@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fli-cJ-Aew">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HackingWithSwiftPorject2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrt-z4-AJA">
+                                <rect key="frame" x="87.5" y="109" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Hj6-TS-xXo"/>
+                                    <constraint firstAttribute="height" constant="100" id="kcJ-Pf-iBJ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQX-uY-dtj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kF-eH-2wJ">
+                                <rect key="frame" x="87.5" y="254" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Yuh-vR-0Bp"/>
+                                    <constraint firstAttribute="height" constant="100" id="ZLa-I7-niB"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="france"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zoD-VF-8cp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztx-lu-V33">
+                                <rect key="frame" x="87.5" y="399" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="N1N-o6-hcI"/>
+                                    <constraint firstAttribute="height" constant="100" id="dtu-Jl-2ou"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="italy"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z0h-cJ-9Hj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4kF-eH-2wJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="200:667" id="6Of-A9-trL"/>
+                            <constraint firstItem="Ztx-lu-V33" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="200:667" id="9H7-NM-TGM"/>
+                            <constraint firstItem="Jrt-z4-AJA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MSi-ui-aWd"/>
+                            <constraint firstItem="Ztx-lu-V33" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OEI-c2-b9l"/>
+                            <constraint firstItem="4kF-eH-2wJ" firstAttribute="top" secondItem="Jrt-z4-AJA" secondAttribute="bottom" constant="45" id="ZGq-sT-NPs"/>
+                            <constraint firstItem="Jrt-z4-AJA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="aVg-C1-cS5"/>
+                            <constraint firstItem="Jrt-z4-AJA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="200:667" id="bDz-70-p8a"/>
+                            <constraint firstItem="4kF-eH-2wJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bzk-0L-HL1"/>
+                            <constraint firstItem="Ztx-lu-V33" firstAttribute="top" secondItem="4kF-eH-2wJ" secondAttribute="bottom" constant="45" id="s20-WP-hiO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cd3-uO-5fM"/>
+                    <connections>
+                        <outlet property="button1" destination="Jrt-z4-AJA" id="pg4-So-YhM"/>
+                        <outlet property="button2" destination="4kF-eH-2wJ" id="Dmh-Xb-S07"/>
+                        <outlet property="button3" destination="Ztx-lu-V33" id="xSv-w1-7uR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HLl-lL-o2D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fli-cJ-Aew" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ad9-Zx-FE8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WjD-WY-era"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ht-HQ-Xfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="estonia" width="200" height="100"/>
+        <image name="france" width="200" height="100"/>
+        <image name="italy" width="200" height="100"/>
+    </resources>
+</document>
