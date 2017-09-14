@@ -23,9 +23,14 @@ Hacking with Swift project
    UITableView：如何重新加載數據以及如何插入行。    
    添加 UITextField於 UIAlertController以便可以接受用戶輸入文字。    
     
-6. Whitehouse Petitions    
+6. Auto Layout    
    VFL與 Auto Layout    
-   
+
+    
+7. Whitehouse Petitions    
+   SwiftJson 導入    
+   同時使用 UITabViewController 與 NavigationController 
+   
 
    
   
