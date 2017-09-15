@@ -24,7 +24,6 @@ class ViewController: UITableViewController {
             urlString = "https://api.whitehouse.gov/v1/petitions.json?signatureCountFloor=10000&limit=100"
         }
 
-
         DispatchQueue.global(qos: .userInitiated).async { [unowned self] in
             if let url = URL(string: urlString) {
                 if let data = try? Data(contentsOf: url) {
