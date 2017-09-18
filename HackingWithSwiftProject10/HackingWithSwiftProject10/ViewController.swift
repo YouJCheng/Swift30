@@ -8,7 +8,7 @@
 
 import UIKit
 
-import UIKit
+
 
 class ViewController: UICollectionViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var people = [Person]()
