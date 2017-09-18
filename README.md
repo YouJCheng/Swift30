@@ -34,8 +34,35 @@ Hacking with Swift project
 8. Game    
     
 9. GCD    
-   performSelector / DispatchQueue
-   
+    performSelector / DispatchQueue    
+    
+10. Name to Faces    
+    UICollectionView 展示     
+    利用 UIImagePickerController    
+    
+12. Save User Settings And Data For Later Use    
+    UserDefaults, NSCoding, NSKeyedArchiver    
+    
+13. Make a photo manipulation program using Core Image filters and a UISlider.    
+    Core Image, UISlider, writing to the photo library    
+             
+15. Bring your interfaces to life with animation, and meet switch/case at the same time.    
+    Core Animation, CGAffineTransform
+     
+16. JavaScript Injection    
+    Safari extensions, UITextView, NotificationCenter    
+    Extend Safari with a cool feature for JavaScript developers.    
+            
+19. Capital Cities    
+    MKMapView, MKAnnotation, MKPinAnnotationView, CLLocationCoordinate2D    
+    Teach users about geography while you learn about MKMapView and annotations.    
+              
+21. Local Notifications    
+    UNUserNotificationCenter, UNNotificationRequest, UNMutableNotificationContent, UNCalendarNotificationTrigger, and        
+    UNTimeIntervalNotificationTrigger     
+    Send reminders, prompts and alerts even when your app isn't running.    
+
+
 
    
   
