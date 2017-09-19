@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Flo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0n-IV-w3d" customClass="PushButton" customModule="Flo" customModuleProvider="target">
+                                <rect key="frame" x="147" y="456" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Fen-Xs-6Tf"/>
+                                    <constraint firstAttribute="height" constant="80" id="WSg-iu-WNu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="4.4220126940000001e-07" green="0.78033095600000002" blue="0.8612049222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PLg-Zf-YDI"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8c-fg-lpK" customClass="CounterView" customModule="Flo" customModuleProvider="target">
+                                <rect key="frame" x="72" y="218" width="230" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldk-16-bFM">
+                                        <rect key="frame" x="80" y="103" width="70" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="qiH-kZ-k02"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ldk-16-bFM" firstAttribute="leading" secondItem="e8c-fg-lpK" secondAttribute="leading" constant="80" id="DfK-52-ssH"/>
+                                    <constraint firstItem="Ldk-16-bFM" firstAttribute="centerY" secondItem="e8c-fg-lpK" secondAttribute="centerY" id="JzY-6q-iGb"/>
+                                    <constraint firstItem="Ldk-16-bFM" firstAttribute="centerX" secondItem="e8c-fg-lpK" secondAttribute="centerX" id="aL0-ii-CHd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" red="0.22182053330000001" green="0.67232930660000001" blue="0.6370615959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                        <color key="value" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hP-uU-O7z" customClass="PushButton" customModule="Flo" customModuleProvider="target">
+                                <rect key="frame" x="162" y="558" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4mF-K6-JJs"/>
+                                    <constraint firstAttribute="width" constant="50" id="CVn-Uq-Z4c"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.93333333333333335" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5NG-w1-eeQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="e8c-fg-lpK" secondAttribute="trailing" constant="57" id="EnP-xQ-DsS"/>
+                            <constraint firstItem="e8c-fg-lpK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="198" id="JPh-Pw-wea"/>
+                            <constraint firstItem="X0n-IV-w3d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LvS-GX-bd8"/>
+                            <constraint firstItem="3hP-uU-O7z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nsz-T4-Lgz"/>
+                            <constraint firstItem="X0n-IV-w3d" firstAttribute="top" secondItem="e8c-fg-lpK" secondAttribute="bottom" constant="8" id="cGV-b1-sgp"/>
+                            <constraint firstItem="e8c-fg-lpK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="56" id="lwP-Ja-uSY"/>
+                            <constraint firstItem="3hP-uU-O7z" firstAttribute="top" secondItem="X0n-IV-w3d" secondAttribute="bottom" constant="22" id="mCV-bT-rhd"/>
+                            <constraint firstItem="3hP-uU-O7z" firstAttribute="top" secondItem="X0n-IV-w3d" secondAttribute="bottom" constant="22" id="nIU-HI-bVy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3hP-uU-O7z" secondAttribute="bottom" constant="59" id="o5o-7B-F5u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="Ldk-16-bFM" id="S3r-s1-pIA"/>
+                        <outlet property="counterView" destination="e8c-fg-lpK" id="cSI-IA-lcf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
