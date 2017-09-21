@@ -1,6 +1,5 @@
 # Swift30
-Hacking with Swift project 
-
+Hacking with Swift project     
 1. Storm Viewer    
    利用 FileManager 找出圖片檔案並利用 tableView展示。
     
@@ -102,8 +101,7 @@ Hacking with Swift project
     當查看項目時，使用SFSafariViewController，將Safari嵌入到應用程序中。    
     UITableViewCell自動調整大小    
     NSAttributedString 處理格式化字符串繪圖    
-   
-   
+
 33. Cloudkit
 
    
