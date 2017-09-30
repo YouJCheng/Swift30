@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5421E4D1F7A306000C0C1B0 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5421E4C1F7A306000C0C1B0 /* GraphView.swift */; };
 		A5C52A241F70FEB0004FF80F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C52A231F70FEB0004FF80F /* AppDelegate.swift */; };
 		A5C52A261F70FEB0004FF80F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C52A251F70FEB0004FF80F /* ViewController.swift */; };
 		A5C52A291F70FEB0004FF80F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C52A271F70FEB0004FF80F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5421E4C1F7A306000C0C1B0 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		A5C52A201F70FEB0004FF80F /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C52A231F70FEB0004FF80F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C52A251F70FEB0004FF80F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				A5C52A231F70FEB0004FF80F /* AppDelegate.swift */,
+				A5421E4C1F7A306000C0C1B0 /* GraphView.swift */,
 				A5C52A251F70FEB0004FF80F /* ViewController.swift */,
 				A5C52A351F70FF14004FF80F /* PushButton.swift */,
 				A5C52A371F710B84004FF80F /* CounterView.swift */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5421E4D1F7A306000C0C1B0 /* GraphView.swift in Sources */,
 				A5C52A261F70FEB0004FF80F /* ViewController.swift in Sources */,
 				A5C52A241F70FEB0004FF80F /* AppDelegate.swift in Sources */,
 				A5C52A361F70FF14004FF80F /* PushButton.swift in Sources */,
@@ -310,6 +314,7 @@
 				A5C52A341F70FEB0004FF80F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
